@@ -22,6 +22,7 @@
 		798A263B1E144BD700C57187 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		798A263E1E144BD700C57187 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		798A26401E144BD700C57187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		798A26471E144EAB00C57187 /* yalujb.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = yalujb.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		798A26331E144BD700C57187 /* yalujb */ = {
 			isa = PBXGroup;
 			children = (
+				798A26471E144EAB00C57187 /* yalujb.entitlements */,
 				798A26341E144BD700C57187 /* AppDelegate.swift */,
 				798A26361E144BD700C57187 /* ViewController.swift */,
 				798A26381E144BD700C57187 /* Main.storyboard */,
@@ -74,6 +76,7 @@
 				798A262D1E144BD700C57187 /* Sources */,
 				798A262E1E144BD700C57187 /* Frameworks */,
 				798A262F1E144BD700C57187 /* Resources */,
+				798A26461E144C0D00C57187 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -98,6 +101,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = H2JE2CWJS7;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -131,6 +139,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		798A26461E144C0D00C57187 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "./aa.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		798A262D1E144BD700C57187 /* Sources */ = {
@@ -204,7 +228,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -248,7 +272,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -261,6 +285,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = yalujb/yalujb.entitlements;
 				DEVELOPMENT_TEAM = H2JE2CWJS7;
 				INFOPLIST_FILE = yalujb/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -274,6 +299,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = yalujb/yalujb.entitlements;
 				DEVELOPMENT_TEAM = H2JE2CWJS7;
 				INFOPLIST_FILE = yalujb/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
