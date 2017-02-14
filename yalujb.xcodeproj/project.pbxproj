@@ -289,7 +289,7 @@
 				DEVELOPMENT_TEAM = H2JE2CWJS7;
 				INFOPLIST_FILE = yalujb/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.jb.yalujb;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.jb3.yalujb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -303,7 +303,7 @@
 				DEVELOPMENT_TEAM = H2JE2CWJS7;
 				INFOPLIST_FILE = yalujb/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.jb.yalujb;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.jb3.yalujb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
